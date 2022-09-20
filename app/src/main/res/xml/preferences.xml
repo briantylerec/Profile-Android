@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/preference_touch_tittle">
+        <SwitchPreferenceCompat app:title="@string/preference_enable_clicks"
+            app:key="@string/preference_key_enable_clicks"
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Interfaz">
+        <ListPreference app:title="Tamano de la imagen"
+            app:key="pref_ui_img_size"
+            app:entries="@array/sizes"
+            app:entryValues="@array/sizes_values"
+            app:defaultValue="pref_small"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Datos">
+        <Preference app:title="Eliminar datos del usuario"
+            app:key="pref_delete_data"/>
+        <Preference app:title="Restablecer datos y configuraciones"
+            app:key="pref_restore_data"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="hint_name">Nombre</string>
+    <string name="edit_datos_usuario">Editar datos de usuario</string>
+    <string name="key_name">key_name</string>
+    <string name="key_mail">key_mail</string>
+    <string name="key_phone">key_phone</string>
+    <string name="key_web">key_web</string>
+    <string name="key_lat">key_lat</string>
+    <string name="key_long">key_long</string>
+    <string name="key_image">key_image</string>
+    <string name="settings_tittle">Configuracion</string>
+    <string name="preference_touch_tittle">Touch</string>
+    <string name="preference_enable_clicks">Habilitar clicks</string>
+    <string name="preference_key_enable_clicks">pref_en-clic</string>
+</resources>

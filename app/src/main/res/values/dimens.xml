@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_default">18dp</dimen>
+    <dimen name="profile_image_size_small">96dp</dimen>
+    <dimen name="profile_image_size_medium">160dp</dimen>
+    <dimen name="profile_image_size_large">256dp</dimen>
+    <dimen name="profile_corner_radius_large">128dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+</resources>

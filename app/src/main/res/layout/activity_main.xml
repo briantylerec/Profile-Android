@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/common_padding_default"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/profile_corner_radius_large"
+            app:cardElevation="@dimen/common_padding_min">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="@dimen/profile_image_size_large"
+                android:layout_height="@dimen/profile_image_size_large"
+                android:src="@drawable/fondo"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="@string/hint_name"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            tools:text="Cursos Android"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="Correo Electronico"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:autoLink="email"
+            android:textColorLink="@color/black"
+            android:linksClickable="false"
+            android:text="CursosAndroid@gmail.com"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="Sitio Web"/>
+
+        <TextView
+            android:id="@+id/tvWebSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:autoLink="web"
+            android:linksClickable="false"
+            android:textColorLink="@color/black"
+            android:text=""/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="Phone"/>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:autoLink="phone"
+            android:textColorLink="@color/black"
+            android:text="546464654654"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="Mapa"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Ver en el mapa"
+            android:textStyle="bold"
+            android:autoLink="map"
+            android:textColorLink="@color/black"
+            app:drawableEndCompat="@drawable/ic_map"
+            app:drawableTint="@color/black"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEnableLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingTop="40dp"
+            android:text="Habilitar ubicacion"
+            app:drawableStartCompat="@drawable/ic_settings"
+            app:drawableTint="@color/black"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

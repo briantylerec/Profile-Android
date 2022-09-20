@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sizes">
+        <item>Chica</item>
+        <item>Mediana</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string-array name="sizes_values">
+        <item>pref_small</item>
+        <item>pref_medium</item>
+        <item>pref_large</item>
+    </string-array>
+</resources>
