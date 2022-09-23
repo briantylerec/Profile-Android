@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import androidx.core.view.updateLayoutParams
 import androidx.preference.PreferenceManager
+import com.google.android.material.snackbar.Snackbar
 import com.monksoft.profile.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -34,9 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 
-
-
-        //updateUI()
         readUserData()
         setupIntents()
     }
@@ -152,6 +150,21 @@ class MainActivity : AppCompatActivity() {
         }
         if (lat.equals("")) lat = -0.1615789
         if (long.equals("")) long = -78.4845747
+
+
+        //DETECTA SI ES VERTICAL U HORIZONTAL
+        if (resources.getBoolean(R.bool.isVertical)) {
+            Toast.makeText(this, "Vertical", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "Horizontal", Toast.LENGTH_SHORT).show()
+        }
+
+        //PARA DETECTAR SI ES TABLET O NO
+//        if (resources.getBoolean(R.bool.isTablet)) {
+//            binding.tvName.text = "Es un tablet"
+//        } else {
+//            binding.tvName.text = "Es un smartphone"
+//        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
