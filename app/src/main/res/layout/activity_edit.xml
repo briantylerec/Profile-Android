@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".EditActivity">
+    tools:context=".EditActivity"
+    android:background="@color/blue_50">
 
     <LinearLayout
         android:layout_width="match_parent"
